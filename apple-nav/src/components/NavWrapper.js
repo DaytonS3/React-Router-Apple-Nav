@@ -1,12 +1,14 @@
 import React from 'react';
 import '../App.css'
 import DummyData from './DummyData';
+import NavItem from './NavItem';
+
 
 class NavWrapper extends React.Component {
     constructor(){
         super();
 
-        this.State = {
+        this.state = {
             data: []
         }
     }
@@ -20,10 +22,14 @@ class NavWrapper extends React.Component {
 
 
     render() {
-        console.log(this.state);
+        
       return (
-        <div className="App">
-            <p>Hi</p>
+        <div className="Nav-Items">
+            {this.state.data.map(item => (
+                <NavItem key={item.name} name={item.name} 
+                />
+                
+        ))}
         </div>
       );
     }
