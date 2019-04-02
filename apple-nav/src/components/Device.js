@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
-
+import '../App.css';
 
 
 export default class device extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      device: 1
+      device: []
     };
   }
 
-  
+  componentDidMount(){
+
+  }
 
  
  
@@ -19,7 +21,7 @@ export default class device extends Component {
       
     return (
       <div className="device">
-        
+        <h1>Device</h1>
       </div>
     );
   }
