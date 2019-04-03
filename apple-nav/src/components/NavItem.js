@@ -6,7 +6,9 @@ export default function NavItem(props){
     
     return(
          <nav>
-           <Link to='/device' className="A-tag"> <p>{props.name}</p> </Link> 
+           <Link to='/device' className="A-tag">
+                <p>{props.name}</p> 
+            </Link> 
          </nav>
     )
 }
